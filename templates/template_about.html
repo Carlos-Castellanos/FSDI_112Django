@@ -5,9 +5,9 @@
 
 {% block content %}
 
-<h1>About me </h1>
+<h1>Hello my name is {% block myname %} {% endblock myname %}</h1>
 
 <img src="{% static 'images/Carlos.jpeg' %}" height="90" alt="My image">
-<h3>My name is Carlos Lopez, I am a teacher but now I am learning django.</h3>
+<h3>{% block description %} {% endblock description %}</h3>
 
 {% endblock content %}
